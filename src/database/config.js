@@ -1,21 +1,14 @@
 const Sequelize = require('sequelize');
 
-const name = 'Tags';
+const name = 'Config';
 
 module.exports = {
 	name,
 	init: async (client) => {
 		const table = client.sequelize.define(name, {
-			name: {
+			channelId: {
 				type: Sequelize.STRING,
 				unique: true,
-			},
-			description: Sequelize.TEXT,
-			username: Sequelize.STRING,
-			usage_count: {
-				type: Sequelize.INTEGER,
-				defaultValue: 0,
-				allowNull: false,
 			},
 		});
 

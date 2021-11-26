@@ -1,19 +1,19 @@
 {
-  "name": "template",
+  "name": "media only",
   "version": "1.0.0",
-  "description": "Simple discord bot template",
+  "description": "Simple discord bot focused on media only channels",
   "main": "src/bot.js",
   "scripts": {
     "test": "nodemon src/bot.js",
-    "deploy": "pm2 start src/bot.js -i 4 --name template",
-    "reload": "pm2 reload template",
-    "kill": "pm2 stop template",
-    "clean": "pm2 stop template; pm2 delete template"
+    "deploy": "pm2 start src/bot.js -i 4 --name media_only",
+    "reload": "pm2 reload media_only",
+    "kill": "pm2 stop media_only",
+    "clean": "pm2 stop media_only; pm2 delete media_only"
   },
   "keywords": [
     "discord.js",
     "bot",
-    "template"
+    "media only"
   ],
   "author": "Philip Venter",
   "dependencies": {
